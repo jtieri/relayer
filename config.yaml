@@ -1,0 +1,148 @@
+global:
+    api-listen-addr: :5183
+    timeout: 10s
+    light-cache-size: 20
+chains:
+    axelar:
+        type: cosmos
+        value:
+            key: default
+            chain-id: axelar-dojo-1
+            rpc-addr: http://axelar.strange.love:26657/
+            account-prefix: axelar
+            keyring-backend: test
+            gas-adjustment: 1.2
+            gas-prices: 0.01uaxl
+            debug: false
+            timeout: 20s
+            output-format: json
+            sign-mode: direct
+    crescent:
+        type: cosmos
+        value:
+            key: default
+            chain-id: crescent-1
+            rpc-addr: redacted
+            account-prefix: cre
+            keyring-backend: test
+            gas-adjustment: 1.2
+            gas-prices: 0.00ucre
+            debug: false
+            timeout: 20s
+            output-format: json
+            sign-mode: direct
+    juno:
+        type: cosmos
+        value:
+            key: default
+            chain-id: juno-1
+            rpc-addr: http://juno.strange.love:26657/
+            account-prefix: juno
+            keyring-backend: test
+            gas-adjustment: 1.2
+            gas-prices: 0.0025ujuno
+            debug: false
+            timeout: 20s
+            output-format: json
+            sign-mode: direct
+    osmosis:
+        type: cosmos
+        value:
+            key: default
+            chain-id: osmosis-1
+            rpc-addr: http://osmosis.strange.love:26657/
+            account-prefix: osmo
+            keyring-backend: test
+            gas-adjustment: 1.2
+            gas-prices: 0.00uosmo
+            debug: false
+            timeout: 20s
+            output-format: json
+            sign-mode: direct
+    sommelier:
+        type: cosmos
+        value:
+            key: default
+            chain-id: sommelier-3
+            rpc-addr: http://sommelier.strange.love:26657/
+            account-prefix: somm
+            keyring-backend: test
+            gas-adjustment: 1.2
+            gas-prices: 0.00usomm
+            debug: false
+            timeout: 20s
+            output-format: json
+            sign-mode: direct
+paths:
+    axelar-crescent:
+        src:
+            chain-id: axelar-dojo-1
+            client-id: 07-tendermint-31
+            connection-id: connection-17
+        dst:
+            chain-id: crescent-1
+            client-id: 07-tendermint-6
+            connection-id: connection-4
+        src-channel-filter:
+            rule: ""
+            channel-list: []
+    axelar-juno:
+        src:
+            chain-id: axelar-dojo-1
+            client-id: 07-tendermint-25
+            connection-id: connection-14
+        dst:
+            chain-id: juno-1
+            client-id: 07-tendermint-150
+            connection-id: connection-97
+        src-channel-filter:
+            rule: ""
+            channel-list: []
+    axelar-osmosis:
+        src:
+            chain-id: axelar-dojo-1
+            client-id: 07-tendermint-23
+            connection-id: connection-13
+        dst:
+            chain-id: osmosis-1
+            client-id: 07-tendermint-1862
+            connection-id: connection-1453
+        src-channel-filter:
+            rule: ""
+            channel-list: []
+    crescent-juno:
+        src:
+            chain-id: crescent-1
+            client-id: 07-tendermint-5
+            connection-id: connection-3
+        dst:
+            chain-id: juno-1
+            client-id: 07-tendermint-160
+            connection-id: connection-107
+        src-channel-filter:
+            rule: ""
+            channel-list: []
+    juno-osmosis:
+        src:
+            chain-id: juno-1
+            client-id: 07-tendermint-0
+            connection-id: connection-0
+        dst:
+            chain-id: osmosis-1
+            client-id: 07-tendermint-1457
+            connection-id: connection-1142
+        src-channel-filter:
+            rule: ""
+            channel-list: []
+    osmosis-sommelier:
+        src:
+            chain-id: osmosis-1
+            client-id: 07-tendermint-1745
+            connection-id: connection-1348
+        dst:
+            chain-id: sommelier-3
+            client-id: 07-tendermint-0
+            connection-id: connection-0
+        src-channel-filter:
+            rule: ""
+            channel-list: []
