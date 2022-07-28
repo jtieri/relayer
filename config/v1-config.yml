@@ -1,0 +1,266 @@
+global:
+    api-listen-addr: :5183
+    timeout: 10s
+    light-cache-size: 20
+chains:
+    - type: cosmos
+      value:
+        key: default
+        chain-id: cosmoshub-4
+        rpc-addr: https://rpc-cosmoshub.blockapsis.com:443
+        account-prefix: cosmos
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01uatom
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: osmosis-1
+        rpc-addr: https://rpc-osmosis-ia.notional.ventures:443/
+        account-prefix: osmo
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01uosmo
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: axelar-dojo-1
+        rpc-addr: https://axelar-rpc.quickapi.com:443
+        account-prefix: axelar
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01uaxl
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: sifchain-1
+        rpc-addr: https://sifchain-rpc.polkachu.com:443
+        account-prefix: sif
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01rowan
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: kaiyo-1
+        rpc-addr: https://rpc-kujira.ecostake.com:443
+        account-prefix: kujira
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01ukuji
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: stargaze-1
+        rpc-addr: https://rpc.stargaze.ezstaking.io:443/
+        account-prefix: stars
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01ustars
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: akashnet-2
+        rpc-addr: https://rpc-akash-ia.notional.ventures:443/
+        account-prefix: akash
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01uakt
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: secret-4
+        rpc-addr: https://rpc.scrt.network:443
+        account-prefix: secret
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01uscrt
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: core-1
+        rpc-addr: https://rpc-persistent-ia.notional.ventures:443/
+        account-prefix: persistence
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01uxprt
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: mantle-1
+        rpc-addr: https://rpc.assetmantle.nodestake.top:443
+        account-prefix: mantle
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01umntl
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: comdex-1
+        rpc-addr: https://rpc.comdex.one:443
+        account-prefix: comdex
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01ucmdx
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: bitsong-2b
+        rpc-addr: https://rpc-bitsong-ia.notional.ventures:443/
+        account-prefix: bitsong
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01ubtsg
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: chihuahua-1
+        rpc-addr: https://rpc.chihuahua.wtf:443/
+        account-prefix: chihuahua
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01uhuahua
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: sommelier-3
+        rpc-addr: https://sommelier-rpc.polkachu.com:443
+        account-prefix: somm
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01usomm
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: bitcanna-1
+        rpc-addr: http://bcna.paranorm.pro:26657/
+        account-prefix: bcna
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01ubcna
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: umee-1
+        rpc-addr: https://umee-rpc.polkachu.com:443
+        account-prefix: umee
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01uumee
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: omniflixhub-1
+        rpc-addr: https://rpc.omniflix.nodestake.top:443
+        account-prefix: omniflix
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01uflix
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: titan-1
+        rpc-addr: http://seed-1.mainnet.rizon.world:26657
+        account-prefix: rizon
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01uatolo
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: sentinelhub-2
+        rpc-addr: https://rpc-sentinel-ia.notional.ventures:443/
+        account-prefix: sent
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01udvpn
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+    - type: cosmos
+      value:
+        key: default
+        chain-id: regen-1
+        rpc-addr: http://public-rpc.regen.vitwit.com:26657
+        account-prefix: regen
+        keyring-backend: test
+        gas-adjustment: 1.2
+        gas-prices: 0.01uregen
+        debug: false
+        timeout: 20s
+        output-format: json
+        sign-mode: direct
+paths: {}
