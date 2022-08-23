@@ -1,2 +1,2 @@
 # relayer
-Scripts and docs related to relaying
+Config files, docs and various scripts related to IBC relaying.
