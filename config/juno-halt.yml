@@ -381,6 +381,18 @@ paths:
         src-channel-filter:
             rule: ""
             channel-list: []
+    akash-sifchain:
+        src:
+            chain-id: akashnet-2
+            client-id: 07-tendermint-61
+            connection-id: connection-36
+        dst:
+            chain-id: sifchain-1
+            client-id: 07-tendermint-11
+            connection-id: connection-2
+        src-channel-filter:
+            rule: ""
+            channel-list: []
     assetmantle-juno:
         src:
             chain-id: mantle-1
@@ -402,6 +414,18 @@ paths:
             chain-id: juno-1
             client-id: 07-tendermint-150
             connection-id: connection-97
+        src-channel-filter:
+            rule: ""
+            channel-list: []
+    axelar-secretnetwork:
+        src:
+            chain-id: axelar-dojo-1
+            client-id: 07-tendermint-40
+            connection-id: connection-22
+        dst:
+            chain-id: secret-4
+            client-id: 07-tendermint-44
+            connection-id: connection-26
         src-channel-filter:
             rule: ""
             channel-list: []
@@ -462,6 +486,30 @@ paths:
             chain-id: juno-1
             client-id: 07-tendermint-3
             connection-id: connection-2
+        src-channel-filter:
+            rule: ""
+            channel-list: []
+    cosmoshub-secretnetwork:
+        src:
+            chain-id: cosmoshub-4
+            client-id: 07-tendermint-492
+            connection-id: connection-401
+        dst:
+            chain-id: secret-4
+            client-id: 07-tendermint-1
+            connection-id: connection-0
+        src-channel-filter:
+            rule: ""
+            channel-list: []
+    cosmoshub-umee:
+        src:
+            chain-id: cosmoshub-4
+            client-id: 07-tendermint-611
+            connection-id: connection-473
+        dst:
+            chain-id: umee-1
+            client-id: 07-tendermint-9
+            connection-id: connection-1
         src-channel-filter:
             rule: ""
             channel-list: []
@@ -546,6 +594,54 @@ paths:
             chain-id: stargaze-1
             client-id: 07-tendermint-13
             connection-id: connection-11
+        src-channel-filter:
+            rule: ""
+            channel-list: []
+    osmosis-sommelier:
+        src:
+            chain-id: osmosis-1
+            client-id: 07-tendermint-1745
+            connection-id: connection-1348
+        dst:
+            chain-id: sommelier-3
+            client-id: 07-tendermint-0
+            connection-id: connection-0
+        src-channel-filter:
+            rule: ""
+            channel-list: []
+    secretnetwork-sentinel:
+        src:
+            chain-id: secret-4
+            client-id: 07-tendermint-14
+            connection-id: connection-3
+        dst:
+            chain-id: sentinelhub-2
+            client-id: 07-tendermint-96
+            connection-id: connection-75
+        src-channel-filter:
+            rule: ""
+            channel-list: []
+    secretnetwork-stargaze:
+        src:
+            chain-id: secret-4
+            client-id: 07-tendermint-43
+            connection-id: connection-25
+        dst:
+            chain-id: stargaze-1
+            client-id: 07-tendermint-177
+            connection-id: connection-110
+        src-channel-filter:
+            rule: ""
+            channel-list: []
+    sentinel-sifchain:
+        src:
+            chain-id: sentinelhub-2
+            client-id: 07-tendermint-84
+            connection-id: connection-58
+        dst:
+            chain-id: sifchain-1
+            client-id: 07-tendermint-9
+            connection-id: connection-1
         src-channel-filter:
             rule: ""
             channel-list: []
