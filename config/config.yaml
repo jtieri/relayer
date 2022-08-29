@@ -4,16 +4,44 @@ global:
     memo: ""
     light-cache-size: 20
 chains:
+    agoric:
+        type: cosmos
+        value:
+            key: default
+            chain-id: agoric-3
+            rpc-addr: https://rpc.agoric.node.strange.love:443
+            account-prefix: agoric
+            keyring-backend: test
+            gas-adjustment: 1.2
+            gas-prices: 0.00ubld
+            debug: false
+            timeout: 20s
+            output-format: json
+            sign-mode: direct
     axelar:
         type: cosmos
         value:
             key: default
             chain-id: axelar-dojo-1
-            rpc-addr: http://axelar.strange.love:26657/
+            rpc-addr: https://rpc.axelar.strange.love:443
             account-prefix: axelar
             keyring-backend: test
             gas-adjustment: 1.2
             gas-prices: 0.01uaxl
+            debug: false
+            timeout: 20s
+            output-format: json
+            sign-mode: direct
+    cosmoshub:
+        type: cosmos
+        value:
+            key: default
+            chain-id: cosmoshub-4
+            rpc-addr: https://rpc.cosmoshub.strange.love:443
+            account-prefix: cosmos
+            keyring-backend: test
+            gas-adjustment: 1.2
+            gas-prices: 0.01uatom
             debug: false
             timeout: 20s
             output-format: json
@@ -37,7 +65,7 @@ chains:
         value:
             key: default
             chain-id: juno-1
-            rpc-addr: http://juno.strange.love:26657/
+            rpc-addr: https://rpc.juno.strange.love:443
             account-prefix: juno
             keyring-backend: test
             gas-adjustment: 1.2
@@ -51,7 +79,7 @@ chains:
         value:
             key: default
             chain-id: osmosis-1
-            rpc-addr: http://osmosis.strange.love:26657/
+            rpc-addr: https://rpc.osmosis.strange.love:443
             account-prefix: osmo
             keyring-backend: test
             gas-adjustment: 1.2
@@ -65,7 +93,7 @@ chains:
         value:
             key: default
             chain-id: sommelier-3
-            rpc-addr: http://sommelier.strange.love:26657/
+            rpc-addr: https://rpc.sommelier.strange.love:443
             account-prefix: somm
             keyring-backend: test
             gas-adjustment: 1.2
@@ -75,6 +103,19 @@ chains:
             output-format: json
             sign-mode: direct
 paths:
+    agoric-cosmoshub:
+        src:
+            chain-id: agoric-3
+            client-id: 07-tendermint-0
+            connection-id: connection-0
+        dst:
+            chain-id: cosmoshub-4
+            client-id: 07-tendermint-898
+            connection-id: connection-622
+        src-channel-filter:
+            rule: allowlist
+            channel-list:
+                - channel-0
     axelar-crescent:
         src:
             chain-id: axelar-dojo-1
