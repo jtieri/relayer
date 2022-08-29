@@ -2,3 +2,5 @@ https://www.mintscan.io/axelar/account/axelar1kn4tkqezr3c7zc43lsu5r4p2l2qqf4mp4e
 https://www.mintscan.io/osmosis/account/osmo1kn4tkqezr3c7zc43lsu5r4p2l2qqf4mpevqzt5
 https://www.mintscan.io/juno/account/juno1kn4tkqezr3c7zc43lsu5r4p2l2qqf4mp89sf66
 https://www.mintscan.io/crescent/account/cre1kn4tkqezr3c7zc43lsu5r4p2l2qqf4mp4lqhgt
+https://www.mintscan.io/cosmos/account/cosmos1kn4tkqezr3c7zc43lsu5r4p2l2qqf4mp3hnjax
+https://agoric.bigdipper.live/accounts/agoric1t5d4x88srpc7qraxc4z36qagsl5848xrgxdahk
